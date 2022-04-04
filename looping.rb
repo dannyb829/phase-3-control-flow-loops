@@ -1,5 +1,11 @@
 def happy_new_year
   # your code here
+  g = 10
+  10.times do  
+    puts g
+    g -= 1
+  end
+  puts "Happy New Year!"
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -17,8 +23,14 @@ end
 
 def fizzbuzz_printer
   # your code here
+  (1..100).each do |i|
+    puts fizzbuzz(i)
+  end
 end
 
 def reverse_string(str)
+  new_arr = []
+  str.size.times do |i| new_arr.unshift(str.split('')[i]) end
+  new_arr.join  
   # your code here
 end
